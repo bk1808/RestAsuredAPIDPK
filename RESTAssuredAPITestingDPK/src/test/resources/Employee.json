@@ -1,0 +1,16 @@
+{
+	"employee": "Praveen",
+	"employeeId": "TP_004",
+	"mobile": [
+		"5525522552",
+		"8855885577"
+	],
+	"projectManager": {
+		"name": "Karan",
+		"employeeId": "TP_002",
+	
+	"mobileNum": [
+		"6633366556",
+		"7788585858"
+	]}
+}
