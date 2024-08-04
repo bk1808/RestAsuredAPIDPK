@@ -20,7 +20,7 @@ import pojo_classes_utility.ProjectPojo;
 public class BaseAPIClass {
 
 	public ProjectPojo pojoObj;
-	public static RequestSpecification reqSpecObj;//'static' because to use these variables acrss every API test
+	public static RequestSpecification reqSpecObj;//'static' because to use these variables across every API test
 	public static ResponseSpecification resSpecObj;
 	public DatabaseUtility dLib = new DatabaseUtility();
 	public JavaUtility jLib = new JavaUtility();
@@ -40,7 +40,7 @@ public class BaseAPIClass {
 		
 		ResponseSpecBuilder resBuilder = new ResponseSpecBuilder();
 		resBuilder.expectContentType(ContentType.JSON);
-		resSpecObj = resBuilder.build();
+		resSpecObj = resBuilder.build();//it returns the assembled response specification
 		
 		
 	}

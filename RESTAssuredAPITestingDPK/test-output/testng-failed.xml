@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.backend.Assertion_ResponseValidationWithRestAssured.DPK.VerifyResponseHeaderTest">
+      <class name="com.shopperstack.ecommerce.login.ShopperLogin">
         <methods>
-          <include name="verifyHeader"/>
+          <include name="shopperLogin"/>
         </methods>
-      </class> <!-- com.backend.Assertion_ResponseValidationWithRestAssured.DPK.VerifyResponseHeaderTest -->
+      </class> <!-- com.shopperstack.ecommerce.login.ShopperLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

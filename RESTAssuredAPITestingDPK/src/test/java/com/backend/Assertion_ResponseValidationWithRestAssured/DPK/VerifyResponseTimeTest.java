@@ -1,13 +1,13 @@
 package com.backend.Assertion_ResponseValidationWithRestAssured.DPK;
 
+import static io.restassured.RestAssured.given;
+
+import java.util.concurrent.TimeUnit;
+
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
-
-import java.util.concurrent.TimeUnit;
 
 public class VerifyResponseTimeTest {
 

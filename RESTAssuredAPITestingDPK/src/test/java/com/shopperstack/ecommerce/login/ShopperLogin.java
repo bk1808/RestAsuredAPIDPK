@@ -11,11 +11,20 @@ public class ShopperLogin {
 	@Test
 	public void shopperLogin() {
 		
-		//given()
 		
-		when()
+		String loginBody = "{\r\n"
+				+ "  \"email\": \"praveen.123@gmail.com\",\r\n"
+				+ "  \"password\": \"Password@123\",\r\n"
+				+ "  \"role\": \"Shopper\"\r\n"
+				+ "}";
 		
-			.get("https://www.shoppersstack.com/shopping")
+		given()
+		.contentType("application/json")
+		.body(loginBody)
+		
+		.when()
+		
+		.get("https://www.shoppersstack.com/shopping")
 
 		.then()
 		.statusCode(200)

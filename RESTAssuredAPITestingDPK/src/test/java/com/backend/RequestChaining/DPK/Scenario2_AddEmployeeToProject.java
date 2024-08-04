@@ -18,8 +18,8 @@ public class Scenario2_AddEmployeeToProject {
 	public void addEmplyeeToProject() {
 
 		/*
-		 * Scenario-2: Add an employee to project by creating the project first, and
-		 * using request chaining add an employee to the same project using projectId
+		 * Scenario-2: Add a project by creating the project first, and
+		 * using request chaining add an employee to the same project using projectName
 		 */
 
 		/* create an object of Random class from java.util package */
@@ -27,7 +27,7 @@ public class Scenario2_AddEmployeeToProject {
 		int ranNum = random.nextInt(5000);
 
 		/*
-		 * API-1 create a project first and capture projectId
+		 * API-1 create a project first and capture projectName
 		 */
 		ProjectPojo pojoobject = new ProjectPojo("Praveen", "HRM_" + ranNum, "Created", 10);
 
@@ -42,8 +42,8 @@ public class Scenario2_AddEmployeeToProject {
 
 		response.then().log().all();
 
-		/* API-2 add employee using projectId as end-point or path parameter */
-		/* passing the projectName into the pojo class object */
+		/* API-2 add employee using projectName as  request payload*/
+		/* passing the projectName into the pojo class object payload*/
 		EmployeePojo createEmp = new EmployeePojo("Software Test Engineer",
 				"10/06/1982", "abcd@gmail.com", "Robert" + ranNum, 5.5, "6633552552", projectName, "ROLE_EMPLOYEE",
 				"Robert" + ranNum);

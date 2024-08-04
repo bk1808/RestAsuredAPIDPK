@@ -1,29 +1,18 @@
 package com.NinzaHRM.Ninza.Employee.DPK;
 
+import static io.restassured.RestAssured.given;
+
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Random;
 
 import org.hamcrest.Matchers;
-import org.junit.Before;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import com.mysql.cj.jdbc.Driver;
 import com.ninzahrm.api.baseutility.BaseAPIClass;
 import com.ninzahrm.api.constants.endpoint.IEndpoint;
-import com.ninzahrm.api.genericutility.DatabaseUtility;
-import com.ninzahrm.api.genericutility.FileUtility;
-import com.ninzahrm.api.genericutility.JavaUtility;
 
-import static io.restassured.RestAssured.*;
-import io.restassured.http.ContentType;
 import pojo_classes_utility.EmployeePojo;
 import pojo_classes_utility.ProjectPojo;
 

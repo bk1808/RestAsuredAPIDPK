@@ -1,16 +1,15 @@
 package com.backend.Assertion_ResponseValidationWithRestAssured.DPK;
 
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jayway.jsonpath.JsonPath;
 
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 
